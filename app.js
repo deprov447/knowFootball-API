@@ -6,7 +6,9 @@ app         = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.listen(4470,function(){
+const PORT = process.env.PORT || 5000
+
+app.listen(PORT,function(){
     console.log("API server online");
 })
 
