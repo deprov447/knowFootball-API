@@ -1,21 +1,72 @@
-<body style="text-align: center;">
+<html>
+  <head>
+    <title>KnowFootball</title>
+  </head>
+  <style>
+    body{
+        text-align: center;
+        background-color: rgb(41, 41, 41);
+        color: azure;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    h1{
+        font-size: 2.5rem;
+        padding: 2.5%;
+        border-right: 2px solid azure;
+        border-top: 2px solid azure;
+        margin: 10% 10% 2.5%;
+    }
+    table{
+        margin: 20px 10%;
+        border-left: 2px solid azure;
+        border-bottom: 2px solid azure;
+        padding: 2vh;
+        width: 80%;
+    }
+    a{
+        color: goldenrod;
+        text-decoration: none;
+    }
+    td{
+        padding: 5px;
+    }
+    h3:hover{
+        position: relative;
+        transform: translate(-10px);
+        transition-duration: 100ms;
+        cursor: pointer;
+    }
+    h3{
+        width: 50%;
+        margin: 0 auto;
+    }
+  </style>
+  <body>
     <h1>Football Facts and Quiz API</h1>
     <table>
-        <tr>
-            <td>Random Fact</td>
-            <td><a href="/facts">Link</a></td>
-        </tr>
-        <tr>
-            <td>Random Facts with quantity</td>
-            <td><a href="/facts/num=10">Link</a></td>
-        </tr>
-        <tr>
-            <td>Random Question and Answer</td>
-            <td><a href="/quiz">Link</a></td>
-        </tr>
-        <tr>
-            <td>Random Question and Answer with quantity</td>
-            <td><a href="/quiz/num=10">Link</a></td>
-        </tr>
+      <tr>
+        <td>Random Fact</td>
+        <td><a href="/facts">Link</a></td>
+      </tr>
+      <tr>
+        <td>Random Facts with quantity</td>
+        <td><a href="/facts/num=10">Link</a></td>
+      </tr>
+      <tr>
+        <td>Random Question and Answer</td>
+        <td><a href="/quiz">Link</a></td>
+      </tr>
+      <tr>
+        <td>Random Question and Answer with quantity</td>
+        <td><a href="/quiz/num=10">Link</a></td>
+      </tr>
     </table>
-</body>
+    <h3>See Details on Github</h3>
+  </body>
+  <script>
+      var link=document.querySelector("h3");
+      link.addEventListener("click",function(){
+          window.open("https:/github.com/deprov447")
+      })
+  </script>
+</html>
